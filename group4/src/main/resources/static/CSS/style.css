@@ -1,0 +1,410 @@
+/* part1 */
+*{
+    outline: none;
+    font-family: 'Gaegu', cursive;
+    font-size: 20px;
+}
+.contain{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+.myslide{
+    width: 100%;
+    height: 100vh;
+    background: none;
+    position: relative;
+    display: none;
+}
+#background1{
+    filter: blur(1px);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../images/handshake.jpeg);
+    height: 100vh;
+    width: 100%;
+}
+#background2{
+    filter: blur(1px);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../images/doctor.jpg);
+    height: 100vh;
+    width: 100%;
+}
+#background3{
+    filter: blur(1px);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../images/doctor2.png);
+    height: 100vh;
+    width: 100%;
+}
+#background4{
+    filter: blur(1px);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../images/emergency.jpg);
+    height: 100vh;
+    width: 100%;
+}
+.pannel{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: white;
+    justify-content: center;
+    background: rgba(0,0,0,40%);
+}
+.pannel > div{
+    width: 60%;
+    text-align: center;
+    border: 0.5px solid white;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+    padding: 10px;
+} 
+.btw{
+    border-radius: 15px;
+    background-color: orange;
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+.btw:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+/* part 2 */
+.intro{
+    color: white;
+    background: #302939;
+    text-align: center;
+    padding: 50px;
+    width: 100%;
+}
+.introMain{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+/* part 3 */
+.part3{
+    width: 100%;
+    padding-top: 50px;
+}
+.part3Body{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.p3pic1{
+    background-image: url('../images/handsome.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 415px;
+    width: 80%;
+    margin: 0 auto;
+}
+.p3pic2{
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 415px;
+    width: 80%;
+    margin: 0 auto;
+}
+.pic1{
+    padding-top: 40px;
+    margin-bottom: 20px;
+}
+.pic2{
+    padding-bottom: 40px;
+}
+/* part4 */
+.part4{
+    width: 100%;
+    margin-top: 200px;
+    padding-bottom: 100px;
+}
+.p4Content{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.p4Head{
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: black;
+}
+.p4Pic{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 150px;
+}
+.p4contain{
+    position: relative;
+    height: 400px;
+    overflow: hidden;
+}
+.p4Pic1{
+    background-image: url('../images/adult-doctors-gloves-263337.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    width: 80%;
+    margin: 0 auto;
+}
+.p4Pic2{
+    background-image: url('../images/virtualcare.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    width: 80%;
+    margin: 0 auto;
+}
+.p4Pic3{
+    background-image: url('../images/heart.jpeg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    width: 80%;
+    margin: 0 auto;
+}
+.p4Box{
+    text-align: center;
+    font-size: 20px;
+    height: 80px;
+    line-height: 80px;
+    width: 80%;
+    margin: 0 auto;
+    background: rgba(0,0,0,20%);
+}
+.p4Group{
+    height: 480px;
+    position: absolute;
+    width: 100%;
+    transition-timing-function: linear;
+    transition: 0.5s;
+    top: 0;
+}
+.p4Group:hover{
+    top: -80px;
+}
+/* part5 */
+.part5{
+    position: relative;
+}
+.part5pic{
+    background-image: url('../images/hospital.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 50vh;
+    background-attachment: fixed;
+}
+.part5Content{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+}
+.p5Box{
+    height: 40vh;
+    background: white;
+    float: right;
+    padding: 30px;
+}
+.btw2{
+    width: 150px;
+    height: 50px;
+    border: 1px solid;
+    background: orange;
+    border-radius: 20px 20px 20px 20px;
+    text-align: center;
+    cursor: pointer;
+    display: block;
+    line-height: 50px;
+}
+.btw2:hover{
+    background: gold;
+}
+/* part6 */
+/* part7 */
+.part7{
+    width: 100%;
+    position: relative;
+}
+.p7Pic{
+    background-image: url('../images/close-up-doctor-health-42273.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 50vh;
+}
+.p7Content{
+    background: rgba(100, 100, 100, 0.7);
+    text-align: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50vh;
+    position: absolute;
+    color: white;
+    padding: 100px;
+}
+.p7Content>div{
+    width: 60%;
+    margin: 0 auto;
+    font-size: 2vh;
+}
+/* part9 */
+.part9{
+    width: 100%;
+    position: relative;
+    
+}
+.form{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(100, 100, 100, 0.7);
+    height: 900px;
+}
+.p9Form{
+    display: flex;
+    flex-wrap: wrap;
+}
+.formmain{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+}
+.p9Form input{
+    width: 50%;
+    background: rgb(8, 7, 7);
+    color: white;
+    height: 50px;
+    border: 1px solid;
+    border-radius: 15px;
+}
+.p9Pic{
+    background-image: url('../images/adult-doctors-gloves-263337.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 900px;
+}
+.btw3{
+    width: 50vw;
+    border-radius: 15px;
+    background: orange;
+    height: 50px;
+    cursor: pointer;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 50px;
+    margin-top: 50px;
+}
+/* last */
+.footer{
+    width: 100%;
+    background: #303030;
+    color: grey;
+
+}
+.footerContain{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 100px;
+}
+.fIcon{
+    display: flex;
+    color: orange;
+    justify-content: space-around;
+}
+.fIcon i:nth-child(2){
+    color: aquamarine;
+}
+.fIcon i:nth-child(3){
+    color: darkred;
+}
+.fIcon i:nth-child(4){
+    color: lightcoral;
+}
+.fPicMain{
+    display: flex;
+}
+.fPic{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 20%;
+    height: 50px;
+    border-radius: 50%;
+    margin-top: 20px;
+
+}
+.fPicContent{
+    width: 80%;
+    padding: 10px;
+}
+.ins{
+    display: flex;
+    flex-wrap: wrap;
+}
+.insPic{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 100px;  
+}
+.footer input{
+    width: 100%;
+    height: 50px;
+    color: white;
+}
+.footer button{
+    background: orange;
+    color: white;
+    width: 100%;
+    height: 50px;
+    border-style: outset;
+    border: none;
+}
